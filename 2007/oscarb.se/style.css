@@ -1,0 +1,92 @@
+/* CSS Document for oscarb.se */
+
+html, body {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+
+#content {
+	width:752px; height: 500px;
+	position: absolute;
+	left: 50%; top: 50%;
+	margin-left: -376px; /* hlften av bredden i width */
+	margin-top: -300px; /* hlften av hjden i height */
+	background-color: #fff;
+	text-align: center;
+}
+
+
+/* NAVIGATION */
+#navi {
+	margin-top: 15px;
+}
+
+#navi ul {
+	margin-left: 0;
+	padding-left: 0;
+	display: inline;
+	} 
+
+#navi ul li {
+	margin-left: 0;
+	padding: 0 6px 0 8px;
+	border-left: 2px solid #999;
+	list-style: none;
+	display: inline;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	}
+			
+#navi ul li.first {
+	margin-left: 0;
+	border-left: none;
+	list-style: none;
+	display: inline;
+	}
+	
+#copy h5, h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:left;
+}
+h5 {
+ 	color: #536880; 
+	font-weight: bold;
+	font-size: 11px;
+	margin: 35px 0 0 240px;
+}
+h6 {
+	font-size: 10px;
+	color: #999;
+	margin: 0 0 0 240px;
+}
+
+dfn {
+	font-style: normal;
+}
+
+a:link, a:visited, a:active, a:hover {
+	text-decoration: none;
+}
+a:link {
+	color: #999;
+	text-decoration: none;
+}
+a:visited {
+	color: #999;
+	text-decoration: none;
+}
+a:hover {
+	color: #184b81;
+	text-decoration: none;
+}
+a:active {
+	color: #999;
+	text-decoration: none;
+}
