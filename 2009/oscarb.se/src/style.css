@@ -1,0 +1,421 @@
+/* CSS - oscarb.se v.8.0 */
+
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: none;
+}
+
+object {
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+html, body {
+	background: #fff url('images/bg-top.gif') repeat-x 0 -65px; /* Default: -50px */
+
+	font-family: "Trebuchet MS", Trebuchet, Arial, Verdana, Helvetica, sans-serif;
+
+	margin: 0;
+	padding: 0;
+
+	height: 100%; /* For footer use */
+}
+
+
+#pagediv {
+	margin: 0 auto;				/* Center page */
+	padding-top: 90px; 			/* 155px - Adjust page below fade, default: 105px */
+	padding-left: 102px; 		/* 220px - Adjust width - 450px from left edge    */
+	padding-bottom: .5em;
+	width: 600px;				/* Width of page */
+	position: relative;		/* Because of "one year older" pic */
+}
+
+
+/* Footer
+   Code by http://ryanfait.com/sticky-footer/
+   Needs hack for IE - see iesucks.css
+*/
+
+#wrapper {
+	min-height: 100%;
+	margin: 0 auto -35px; /* the bottom margin is the negative value of the footer's height */
+}
+
+#footer, .push {
+    height: 35px;
+}
+
+/* Footer end */
+
+
+
+/* Cooliris (formerly known as PicLens) functionality */
+.mbf-item {
+	display: none;
+}
+
+/* Additional images under Web */
+.hidden, #fbthumb {
+	display: none;
+}
+
+
+
+
+/*
+
+	LOGO
+
+*/
+
+#logotype {
+	display: block;
+	margin-left: 44px; /* Default: 25px */
+}
+
+
+/* oscarb.se - One year older! */
+#oneyearolder {
+	position: absolute;
+	top: 4.1em;
+	right: -6.4em;
+	
+
+}
+
+/*
+
+	ART - MUSIC - WEB - ME
+
+*/
+
+
+/* BOXES */
+
+#art, #music, #web, #me, #lyrics {
+	border-bottom: 4px solid #e8e8e8;
+	position: relative;
+
+	margin: 2em 0 3.5em 0;
+	padding: 0;
+}
+
+
+
+/*
+	   ART
+	   			*/
+
+#art .content img, #art .content a {
+	vertical-align: bottom;
+}
+
+
+#art .content img {
+	padding-bottom: 0.9em;
+}
+
+#art .content a {
+	border-bottom: 4px solid #e8e8e8;
+	margin-right: 1.7em;
+}
+
+
+/* HOVER */
+#art .content a:hover {
+	border-bottom: 4px solid #48b36d;
+}
+
+#art .content a:active {
+	border-bottom: 4px solid #811818;
+}
+
+
+/*
+		 WEB
+		 			*/
+
+
+/* URL Not available */
+#web h4 {
+	color: #ccc;
+}
+
+#web .content {
+	padding-bottom: 1.1em;
+}
+
+/* Links */
+#web a.thumbnail {
+	border: 4px solid #e8e8e8;
+	width: 100px;
+
+	float: left;
+
+	margin-right: 0.8em;
+	margin-bottom: 1em;
+	padding: 6px;
+
+	text-align: left;
+
+}
+
+#web a.thumbnail:hover {
+	border: 4px solid #48b36d;
+}
+
+#web a.thumbnail:active {
+	border: 4px solid #811818;
+}
+
+
+
+/*
+		 MUSIC
+			 		*/
+
+#music {
+	padding-bottom: 0.6em;
+}
+
+
+
+/*
+		 ME
+			 		*/
+
+#me {
+	margin-top: 4.5em;
+}
+
+#me .content {
+	margin-left: 6em;
+	padding-bottom: 0.6em;	/* Use padding instead of margin to make it work in IE */
+}
+
+#me h2 {
+	right: auto;
+	left: 0px;
+
+	text-align: left;
+}
+
+#me h3 {
+	font-size: 16px;
+	margin-bottom: 0.2em;
+}
+
+#me p {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+
+#me em {
+	font-style: normal;
+	color: #aaa;
+	cursor: help;
+}
+
+#me #signature {
+	position: absolute;
+	bottom: -21px;
+	right: -14px;
+}
+
+
+
+/*
+	 Navigation and counter
+	 							*/
+
+.count, .copy, .navi {
+	color: #cfcfcf;
+	font-size: 12px;
+	font-weight: bold;
+
+	position: absolute;
+	bottom: -2em;
+	left: 0;
+
+}
+
+.count {
+	color: #184b81;
+	font-weight: bolder;	
+}
+
+.count a:link {
+	color: #cfcfcf;
+}
+.count a:visited {
+	color: #cfcfcf;
+}
+.count a:hover {
+	color: #48b36d;
+}
+.count a:active {
+	color: #184b81;
+}
+
+
+
+
+/* Only display when JavaScript is enabled */
+.count, .navi {
+	display: none;
+}
+
+.hasJS .count, .hasJS .navi {
+	display: block;
+}
+
+
+
+/*
+		next >>
+					*/
+
+.navi {
+	color: #e8e8e8;
+	left: auto;
+	right: 0;
+}
+
+
+
+
+
+
+/*
+
+	FOOTER
+
+*/
+
+#footer {
+	width: 100%;
+	bottom: 0;
+	height: 35px;
+	background: #24334d url('images/bg-bottom.gif') repeat-x 0 0;
+}
+
+
+/*
+
+	HEADLINES
+
+*/
+
+
+/* Style for error.php */
+h1 {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 64px;
+
+	position: absolute;
+	top: 42%;
+
+	display: none;
+}
+
+/* Art - Music - Web - Me */
+h2 {
+
+	display: block;
+
+	color: #e8e8e8;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 56px;
+	line-height: 1.25;	/* Fix for Safari */
+
+	position: absolute;
+	bottom: -0.33em;
+	right: -5px;
+
+	text-align: right;
+
+}
+
+/* Website titles - Music titles - Me info */
+h3 {
+	color: #333;
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+/* Website URL - Download MP3 - View Lyrics */
+h4 {
+	font-size: 14px;
+	font-weight: bold;
+
+	margin: 0.2em 0 0.7em 0;
+}
+
+
+/* Not yet used */
+h5 {
+ 	color: #536880;
+	font-weight: bold;
+	font-size: 11px;
+	margin: 0;
+}
+
+/* Not yet used */
+h6 {
+	font-size: 10px;
+	color: #999;
+	margin: 0;
+}
+
+/* Paragrahps */
+p {
+	color: #333;
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+
+	margin: 0 0 0.6em 0;
+}
+
+
+
+/* Clear floats */
+.cls {
+	clear: both;
+}
+
+
+
+/*
+
+	LINKS
+
+*/
+
+a img {
+	border: none;
+}
+
+a:link {
+	color: #184b81;
+	text-decoration: none;
+}
+a:visited {
+	color: #184b81;
+	text-decoration: none;
+}
+a:hover {
+	color: #48b36d;
+	text-decoration: none;
+}
+a:active {
+	color: #811818;
+	text-decoration: none;
+}

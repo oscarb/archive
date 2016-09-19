@@ -1,0 +1,29 @@
+/* CSS - oscarb.se v.8.0 */
+/* Internet Explorer <= 7 "hacks" */
+
+
+
+/* FOOTER */
+/* Uses IE6 min-height hack */
+
+#wrapper {
+	height: auto !important;
+	height: 100%;
+}
+
+/* ART, WEB, MUSC */
+/* font-style: italic causes extra margin to the right of h2 */
+/* Setting overflow: auto fixes this for IE6 and IE7 but causes flicker in Firefox on Shadowbox.open() */
+
+h2 {
+	overflow: auto;
+}
+
+
+/* Bug: MUSIC jumps when user clicks "next" in IE6 (and in IE7 for large paddings) */
+
+#music object {
+	margin-bottom: -0.1em;
+}
+
+/* To be continued... */

@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /
+RewriteRule (.*)\.rss(.*) $1.php$2 [nocase]
+AddDefaultCharset Off

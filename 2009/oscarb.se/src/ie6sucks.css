@@ -1,0 +1,21 @@
+/* CSS - oscarb.se v.8.0 */
+/* Internet Explorer 6 "hacks" */
+
+/* Border of divs will not appear when no width is set in IE6 */
+/* However, if width is set then green hover effect is missing in IE7 */
+
+#art, #music, #web, #me {
+	width: 100%;
+}
+
+
+/* ART, WEB, MUSC */
+/* font-style: italic causes extra margin to the right of h2 */
+/* Setting overflow: auto fixes this for IE6 and IE7 but causes flicker in Firefox on Shadowbox.open() */
+
+h2 {
+	overflow: visible;
+}
+
+
+/* To be continued... */
